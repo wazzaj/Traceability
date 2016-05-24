@@ -1,0 +1,7 @@
+2016-05-24 22:23:17.398 Following entries record Rally REST API interaction via https://demo-apac.rallydev.com/slm/webservice/v2.0 for user: paul@acme.com
+2016-05-24 22:23:17.632 GET HierarchicalRequirement?fetch=true&query=(FormattedID = S122)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-24 22:23:23.102 200 HierarchicalRequirement?fetch=true&query=(FormattedID%20%3D%20S122)&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-24 22:23:33.771 GET HierarchicalRequirement?fetch=true&query=(FormattedID = S82)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-24 22:23:39.169 200 HierarchicalRequirement?fetch=true&query=(FormattedID%20%3D%20S82)&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-24 22:23:49.844 GET HierarchicalRequirement?fetch=true&query=(FormattedID = S80)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-24 22:23:55.348 200 HierarchicalRequirement?fetch=true&query=(FormattedID%20%3D%20S80)&workspace=workspace/699220&project=project TotalResultCount 1

@@ -1,29 +1,52 @@
 import pyral
 import requests
-from pyral import Rally, rallyWorkset
-import sys
+from pyral import Rally, RallyRESTAPIError, rallyWorkset
+import sys, os
 
-username = 'dan@acme.com'
-password = 'Motivate!'
-host = 'https://demo-apac.rallydev.com/slm/webservice/v2.0/'
+####################################################################################################
+
+errout = sys.stderr.write
+
+####################################################################################################
 
 def setUpBasicAuth(r):
+    return ()
 
-    return()
 
-def addDependenciesToRally(rally, pre, Post):
-    response = rally.get('UserStory', fetch=True, query="FormattedID = %s" % pre)
+def addDependenciesToRally(rally, pre, post):
+    successor = getStory(rally, pre)
+    print "S: " + successor.FormattedID
+    predecessor = getStory(rally, post)
+    print "P: " + predecessor.FormattedID
 
-    print response.resultCount
-#    if not response.errors:
-    for story in response:
-        print story
-        print("Match on " + story.FormattedID)
-        print story.details()
-#        else:
-#            print("Errors" + str(response.errors))
+    info = {
+        "FormattedID": successor.FormattedID,
+        "Name": "Updated from Import Script"
+#        "Predecessors": [predecessor]
+    }
 
-    return()
+    try:
+        updatedStory = rally.post('UserStory', info)
+    except RallyRESTAPIError, details:
+        sys.stderr.write('ERROR: %s \n' % details)
+        sys.exit(2)
+
+    print "Story Updated"
+    print "FormattedID: %s Predecessor: %s" % (updatedStory.FormattedID, predecessor.FormattedID)
+
+    return ()
+
+
+def getStory(rally, storyID):
+    # type: (object, object) -> object
+    response = rally.get('UserStory', fetch=True, query="FormattedID = %s" % storyID)
+
+    if not response.errors:
+        for story in response:
+            continue
+
+    return (story)
+
 
 def getDependencies(rally):
     import pyexcel as pe
@@ -31,10 +54,9 @@ def getDependencies(rally):
 
     records = pe.get_records(file_name="Test.xlsx")
     for record in records:
-        print(record['Pre'],record['Post'])
-        addDependenciesToRally(rally,record['Pre'],record['Post'])
-          
-    return()
+        addDependenciesToRally(rally, record['Pre'], record['Post'])
+
+    return ()
 
 
 def setupRally():
@@ -45,7 +67,8 @@ def setupRally():
     rally = Rally(server, user, password, workspace=workspace, project=project)
     rally.enableLogging('mypyral.log')
 
-    return(rally)
+    return (rally)
+
 
 myRally = setupRally()
 getDependencies(myRally)

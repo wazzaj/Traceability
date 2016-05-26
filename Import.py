@@ -2,6 +2,7 @@ import pyral
 import requests
 from pyral import Rally, RallyRESTAPIError, rallyWorkset
 import sys, os
+from json import JSONEncoder
 
 ####################################################################################################
 
@@ -10,20 +11,28 @@ errout = sys.stderr.write
 ####################################################################################################
 
 def addDependenciesToRally(rally, pre, post):
-    successor = getStory(rally, pre)
-    print "S: " + successor.FormattedID
+    postStory = getStory(rally, pre)
+    print "S: " + postStory.FormattedID
     predecessor = getStory(rally, post)
     print "P: " + predecessor.FormattedID
 
+    postStory.Predecessors.append(predecessor)
+
+    print len(postStory.Predecessors)
+
+    for item in postStory.Predecessors:
+        print item.FormattedID + " " + item.Name
+
     info = {
-        "FormattedID": successor.FormattedID,
-        "Name": "Updated from Import Script"
-#        "Predecessors": [predecessor]
+        "FormattedID": postStory.FormattedID,
+        "Name": "Updated from Import Script 2",
+        "Predecessors": postStory.Predecessors
     }
 
     try:
         updatedStory = rally.post('UserStory', info)
     except RallyRESTAPIError, details:
+        print 'ERROR: ' + details
         sys.stderr.write('ERROR: %s \n' % details)
         sys.exit(2)
 

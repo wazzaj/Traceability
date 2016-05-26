@@ -9,10 +9,6 @@ errout = sys.stderr.write
 
 ####################################################################################################
 
-def setUpBasicAuth(r):
-    return ()
-
-
 def addDependenciesToRally(rally, pre, post):
     successor = getStory(rally, pre)
     print "S: " + successor.FormattedID

@@ -15,19 +15,17 @@ def addDependenciesToRally(rally, pre, post):
     print "S: " + postStory.FormattedID
     predecessor = getStory(rally, post)
     print "P: " + predecessor.FormattedID
-
-    postStory.Predecessors.append(predecessor)
-
     print len(postStory.Predecessors)
+
+    newList = list()
 
     for item in postStory.Predecessors:
         print item.FormattedID + " " + item.Name
+        assert isinstance(item._ref, object)
+        print item._ref
+        newList.append(item._ref)
 
-    info = {
-        "FormattedID": postStory.FormattedID,
-        "Name": "Updated from Import Script 2",
-        "Predecessors": postStory.Predecessors
-    }
+    info = dict(FormattedID=postStory.FormattedID, Name="Updated from Import Script 4", Predecessors=newList)
 
     try:
         updatedStory = rally.post('UserStory', info)
@@ -44,7 +42,7 @@ def addDependenciesToRally(rally, pre, post):
 
 def getStory(rally, storyID):
     # type: (object, object) -> object
-    response = rally.get('UserStory', fetch=True, query="FormattedID = %s" % storyID)
+    response = rally.get('UserStory', fetch="_ref,ObjectID,FormattedID,Name,Predecessors", query="FormattedID = %s" % storyID)
 
     if not response.errors:
         for story in response:

@@ -1,5 +1,6 @@
 import pyral
 import requests
+import urllib
 from pyral import Rally, RallyRESTAPIError, rallyWorkset
 import sys, os
 from json import JSONEncoder
@@ -15,22 +16,23 @@ def addDependenciesToRally(rally, pre, post):
     print "S: " + postStory.FormattedID
     predecessor = getStory(rally, post)
     print "P: " + predecessor.FormattedID
-    print len(postStory.Predecessors)
 
     newList = list()
 
     for item in postStory.Predecessors:
         print item.FormattedID + " " + item.Name
-        assert isinstance(item._ref, object)
-        print item._ref
-        newList.append(item._ref)
+        assert isinstance(item.ref, object)
+        newList.append({"_ref" : str(item.ref)})
 
-    info = dict(FormattedID=postStory.FormattedID, Name="Updated from Import Script 4", Predecessors=newList)
+    newList.append({"_ref" : str(predecessor.ref)})
+
+    info = dict(FormattedID=postStory.FormattedID, Name="Last Chance", Predecessors=newList)
+    print "Issuing POST request..."
 
     try:
         updatedStory = rally.post('UserStory', info)
     except RallyRESTAPIError, details:
-        print 'ERROR: ' + details
+        print 'ERROR: ' + str(details)
         sys.stderr.write('ERROR: %s \n' % details)
         sys.exit(2)
 
@@ -39,9 +41,9 @@ def addDependenciesToRally(rally, pre, post):
 
     return ()
 
-
 def getStory(rally, storyID):
     # type: (object, object) -> object
+    print "Processing GET request..."
     response = rally.get('UserStory', fetch="_ref,ObjectID,FormattedID,Name,Predecessors", query="FormattedID = %s" % storyID)
 
     if not response.errors:
@@ -49,7 +51,6 @@ def getStory(rally, storyID):
             continue
 
     return (story)
-
 
 def getDependencies(rally):
     import pyexcel as pe

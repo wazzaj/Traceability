@@ -1,141 +1,145 @@
-2016-05-27 14:49:28.241 Following entries record Rally REST API interaction via https://demo-apac.rallydev.com/slm/webservice/v2.0 for user: paul@acme.com
-2016-05-27 14:49:28.397 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S122)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
-2016-05-27 14:49:33.669 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S122)&workspace=workspace/699220&project=project TotalResultCount 1
-2016-05-27 14:49:33.669 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S123)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
-2016-05-27 14:49:38.929 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S123)&workspace=workspace/699220&project=project TotalResultCount 1
-2016-05-27 14:49:38.945 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/HierarchicalRequirement/2495311/Predecessors?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:49:44.202 200 HierarchicalRequirement/2495311/Predecessors?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 1
-2016-05-27 14:49:49.487 GET HierarchicalRequirement?fetch=ObjectID&query=(FormattedID = "S122")&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
-2016-05-27 14:49:54.744 200 HierarchicalRequirement?fetch=ObjectID&query=(FormattedID%20%3D%20%22S122%22)&workspace=workspace/699220&project=project TotalResultCount 1
-2016-05-27 14:49:54.760 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10001/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:00.002 200 attributedefinition/-10001/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:00.002 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10000/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:05.254 200 attributedefinition/-10000/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:05.254 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-41552/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:10.513 200 attributedefinition/-41552/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:10.513 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-17000/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:15.751 200 attributedefinition/-17000/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:15.751 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-17500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:21.075 200 attributedefinition/-17500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:21.075 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10514/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:26.321 200 attributedefinition/-10514/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:26.321 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10503/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:31.580 200 attributedefinition/-10503/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:31.580 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10509/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:36.832 200 attributedefinition/-10509/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:36.832 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10519/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:42.071 200 attributedefinition/-10519/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:42.071 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:47.354 200 attributedefinition/-10500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:47.354 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10507/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:52.620 200 attributedefinition/-10507/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:52.620 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10517/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:50:57.865 200 attributedefinition/-10517/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:50:57.865 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10518/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:51:03.128 200 attributedefinition/-10518/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:51:03.128 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10502/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:51:08.412 200 attributedefinition/-10502/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:51:08.412 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10512/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:51:13.695 200 attributedefinition/-10512/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 90
-2016-05-27 14:51:13.727 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10506/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:51:18.999 200 attributedefinition/-10506/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 15
-2016-05-27 14:51:19.014 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10515/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:51:24.257 200 attributedefinition/-10515/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:51:24.257 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10505/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:51:29.502 200 attributedefinition/-10505/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:51:29.502 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10511/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:51:34.746 200 attributedefinition/-10511/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:51:34.746 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-41580/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:51:39.987 200 attributedefinition/-41580/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:51:39.987 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-41581/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:51:45.223 200 attributedefinition/-41581/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:51:45.223 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-41582/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:51:50.490 200 attributedefinition/-41582/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:51:50.490 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-11006/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:51:55.758 200 attributedefinition/-11006/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:51:55.758 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27502/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:01.003 200 attributedefinition/-27502/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:52:01.003 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27509/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:06.262 200 attributedefinition/-27509/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:52:06.262 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27516/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:11.532 200 attributedefinition/-27516/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:52:11.532 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27501/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:16.778 200 attributedefinition/-27501/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:52:16.778 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27517/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:22.055 200 attributedefinition/-27517/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:52:22.055 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27527/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:27.329 200 attributedefinition/-27527/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:52:27.329 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27525/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:32.627 200 attributedefinition/-27525/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:52:32.627 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27524/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:37.867 200 attributedefinition/-27524/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:52:37.867 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27504/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:43.119 200 attributedefinition/-27504/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 12
-2016-05-27 14:52:43.119 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:48.704 200 attributedefinition/-27500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:52:48.704 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27508/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:53.948 200 attributedefinition/-27508/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:52:53.948 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27514/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:52:59.217 200 attributedefinition/-27514/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:52:59.217 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27522/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:53:04.463 200 attributedefinition/-27522/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:53:04.463 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27505/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:53:09.736 200 attributedefinition/-27505/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 4
-2016-05-27 14:53:09.736 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27515/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:53:14.966 200 attributedefinition/-27515/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:53:14.966 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27512/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:53:20.217 200 attributedefinition/-27512/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:53:20.217 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27511/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:53:25.445 200 attributedefinition/-27511/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:53:25.445 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27513/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:53:30.711 200 attributedefinition/-27513/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:53:30.711 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27503/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:53:35.966 200 attributedefinition/-27503/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:53:35.966 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27518/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:53:41.205 200 attributedefinition/-27518/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:53:41.205 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/745217/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:53:46.491 200 attributedefinition/745217/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:53:46.491 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/weblinkdefinition/722564/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:53:51.754 200 weblinkdefinition/722564/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:53:51.754 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/4047299/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:53:57.045 200 attributedefinition/4047299/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 8
-2016-05-27 14:53:57.045 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/weblinkdefinition/746594/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:54:02.326 200 weblinkdefinition/746594/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:54:02.326 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/746589/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:54:07.584 200 attributedefinition/746589/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:54:07.584 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/5904400/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:54:12.839 200 attributedefinition/5904400/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:54:12.839 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/727327/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:54:18.121 200 attributedefinition/727327/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:54:18.121 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/3341981/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:54:23.360 200 attributedefinition/3341981/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:54:23.360 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/727330/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:54:28.637 200 attributedefinition/727330/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:54:28.637 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/727333/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:54:33.874 200 attributedefinition/727333/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:54:33.874 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/1112467/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
-2016-05-27 14:54:39.129 200 attributedefinition/1112467/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
-2016-05-27 14:54:39.129 POST hierarchicalrequirement/2495311?key=51ed0011-a72c-489c-96d1-9195d40a9294&workspace=workspace/699220&project=project/719307
-                            {'HierarchicalRequirement': {'FormattedID': u'S122', 'Predecessors': [u'https://demo-apac.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/6241864'], 'Name': 'Updated from Import Script 4', 'ObjectID': 2495311}}
-2016-05-27 14:54:44.584 GET HierarchicalRequirement/2495311?workspace=workspace/699220&project=project/719307
-2016-05-27 14:54:49.848 200 HierarchicalRequirement/2495311?workspace=workspace/699220&project=project/719307
-2016-05-27 14:54:49.848 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S82)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
-2016-05-27 14:54:55.117 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S82)&workspace=workspace/699220&project=project TotalResultCount 1
-2016-05-27 14:54:55.117 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S80)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
-2016-05-27 14:55:00.391 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S80)&workspace=workspace/699220&project=project TotalResultCount 1
-2016-05-27 14:55:00.391 GET HierarchicalRequirement?fetch=ObjectID&query=(FormattedID = "S82")&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
-2016-05-27 14:55:05.678 200 HierarchicalRequirement?fetch=ObjectID&query=(FormattedID%20%3D%20%22S82%22)&workspace=workspace/699220&project=project TotalResultCount 1
-2016-05-27 14:55:05.678 POST hierarchicalrequirement/1482441?key=51ed0011-a72c-489c-96d1-9195d40a9294&workspace=workspace/699220&project=project/719307
-                            {'HierarchicalRequirement': {'FormattedID': u'S82', 'Predecessors': [], 'Name': 'Updated from Import Script 4', 'ObjectID': 1482441}}
-2016-05-27 14:55:10.959 GET HierarchicalRequirement/1482441?workspace=workspace/699220&project=project/719307
-2016-05-27 14:55:16.259 200 HierarchicalRequirement/1482441?workspace=workspace/699220&project=project/719307
-2016-05-27 14:55:16.259 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S80)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
-2016-05-27 14:55:21.868 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S80)&workspace=workspace/699220&project=project TotalResultCount 1
-2016-05-27 14:55:21.868 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S84)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
-2016-05-27 14:55:27.171 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S84)&workspace=workspace/699220&project=project TotalResultCount 1
-2016-05-27 14:55:27.171 GET HierarchicalRequirement?fetch=ObjectID&query=(FormattedID = "S80")&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
-2016-05-27 14:55:32.445 200 HierarchicalRequirement?fetch=ObjectID&query=(FormattedID%20%3D%20%22S80%22)&workspace=workspace/699220&project=project TotalResultCount 1
-2016-05-27 14:55:32.445 POST hierarchicalrequirement/1482393?key=51ed0011-a72c-489c-96d1-9195d40a9294&workspace=workspace/699220&project=project/719307
-                            {'HierarchicalRequirement': {'FormattedID': u'S80', 'Predecessors': [], 'Name': 'Updated from Import Script 4', 'ObjectID': 1482393}}
-2016-05-27 14:55:37.737 GET HierarchicalRequirement/1482393?workspace=workspace/699220&project=project/719307
-2016-05-27 14:55:43.871 200 HierarchicalRequirement/1482393?workspace=workspace/699220&project=project/719307
+2016-05-31 22:51:11.980 Following entries record Rally REST API interaction via https://demo-apac.rallydev.com/slm/webservice/v2.0 for user: paul@acme.com
+2016-05-31 22:51:13.374 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S122)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-31 22:51:18.688 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S122)&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:51:18.750 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S123)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-31 22:51:24.121 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S123)&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:51:24.121 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/HierarchicalRequirement/2495311/Predecessors?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:51:29.450 200 HierarchicalRequirement/2495311/Predecessors?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:51:34.879 GET HierarchicalRequirement?fetch=ObjectID&query=(FormattedID = "S122")&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-31 22:51:40.134 200 HierarchicalRequirement?fetch=ObjectID&query=(FormattedID%20%3D%20%22S122%22)&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:51:40.134 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10001/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:51:45.518 200 attributedefinition/-10001/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:51:45.518 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10000/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:51:50.780 200 attributedefinition/-10000/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:51:50.780 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-41552/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:51:56.282 200 attributedefinition/-41552/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:51:56.282 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-17000/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:52:01.603 200 attributedefinition/-17000/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:52:01.603 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-17500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:52:06.919 200 attributedefinition/-17500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:52:06.919 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10514/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:52:12.249 200 attributedefinition/-10514/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:52:12.249 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10503/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:52:17.680 200 attributedefinition/-10503/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:52:17.680 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10509/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:52:23.007 200 attributedefinition/-10509/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:52:23.007 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10519/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:52:28.329 200 attributedefinition/-10519/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:52:28.329 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:52:33.657 200 attributedefinition/-10500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:52:33.657 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10507/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:52:38.933 200 attributedefinition/-10507/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:52:38.933 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10517/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:52:44.297 200 attributedefinition/-10517/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:52:44.297 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10518/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:52:49.574 200 attributedefinition/-10518/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:52:49.574 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10502/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:52:54.956 200 attributedefinition/-10502/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:52:54.956 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10512/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:00.378 200 attributedefinition/-10512/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 90
+2016-05-31 22:53:00.409 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10506/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:05.810 200 attributedefinition/-10506/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 15
+2016-05-31 22:53:05.810 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10515/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:11.135 200 attributedefinition/-10515/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:53:11.135 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10505/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:16.408 200 attributedefinition/-10505/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:53:16.408 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-10511/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:21.682 200 attributedefinition/-10511/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:53:21.682 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-41580/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:26.996 200 attributedefinition/-41580/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:53:26.996 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-41581/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:32.425 200 attributedefinition/-41581/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:53:32.425 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-41582/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:37.747 200 attributedefinition/-41582/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:53:37.747 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-11006/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:43.083 200 attributedefinition/-11006/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:53:43.083 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27502/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:48.396 200 attributedefinition/-27502/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:53:48.396 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27509/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:53.726 200 attributedefinition/-27509/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:53:53.726 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27516/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:53:59.059 200 attributedefinition/-27516/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:53:59.059 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27501/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:54:04.375 200 attributedefinition/-27501/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:54:04.375 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27517/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:54:09.705 200 attributedefinition/-27517/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:54:09.705 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27527/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:54:15.035 200 attributedefinition/-27527/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:54:15.035 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27525/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:54:20.351 200 attributedefinition/-27525/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:54:20.351 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27524/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:54:25.684 200 attributedefinition/-27524/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:54:25.684 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27504/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:54:31.003 200 attributedefinition/-27504/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 12
+2016-05-31 22:54:31.003 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:54:36.631 200 attributedefinition/-27500/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:54:36.631 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27508/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:54:41.870 200 attributedefinition/-27508/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:54:41.870 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27514/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:54:47.595 200 attributedefinition/-27514/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:54:47.595 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27522/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:54:52.912 200 attributedefinition/-27522/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:54:52.912 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27505/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:54:58.245 200 attributedefinition/-27505/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 4
+2016-05-31 22:54:58.245 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27515/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:55:03.561 200 attributedefinition/-27515/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:55:03.561 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27512/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:55:09.000 200 attributedefinition/-27512/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:55:09.000 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27511/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:55:14.310 200 attributedefinition/-27511/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:55:14.310 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27513/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:55:19.639 200 attributedefinition/-27513/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:55:19.639 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27503/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:55:24.970 200 attributedefinition/-27503/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:55:24.970 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/-27518/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:55:30.288 200 attributedefinition/-27518/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:55:30.288 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/745217/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:55:35.625 200 attributedefinition/745217/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:55:35.625 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/weblinkdefinition/722564/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:55:40.941 200 weblinkdefinition/722564/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:55:40.941 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/4047299/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:55:46.271 200 attributedefinition/4047299/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 8
+2016-05-31 22:55:46.276 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/weblinkdefinition/746594/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:55:51.596 200 weblinkdefinition/746594/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:55:51.596 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/746589/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:55:56.911 200 attributedefinition/746589/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:55:56.911 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/5904400/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:56:02.242 200 attributedefinition/5904400/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:56:02.242 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/727327/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:56:07.672 200 attributedefinition/727327/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:56:07.672 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/3341981/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:56:12.942 200 attributedefinition/3341981/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:56:12.942 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/727330/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:56:18.208 200 attributedefinition/727330/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:56:18.208 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/727333/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:56:23.546 200 attributedefinition/727333/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:56:23.546 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/attributedefinition/1112467/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:56:28.861 200 attributedefinition/1112467/AllowedValues?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 0
+2016-05-31 22:56:28.861 POST hierarchicalrequirement/2495311?key=dc3b7d4a-85ed-4015-b50a-e20dc5080321&workspace=workspace/699220&project=project/719307
+                            {'HierarchicalRequirement': {'FormattedID': u'S122', 'Predecessors': [{'_ref': 'hierarchicalrequirement/6241864'}, {'_ref': 'hierarchicalrequirement/2495336'}], 'Name': 'Last Chance', 'ObjectID': 2495311}}
+2016-05-31 22:56:34.503 GET HierarchicalRequirement/2495311?workspace=workspace/699220&project=project/719307
+2016-05-31 22:56:39.817 200 HierarchicalRequirement/2495311?workspace=workspace/699220&project=project/719307
+2016-05-31 22:56:39.832 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S82)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-31 22:56:45.250 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S82)&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:56:45.250 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S80)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-31 22:56:50.587 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S80)&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:56:50.587 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/HierarchicalRequirement/1482441/Predecessors?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:56:55.862 200 HierarchicalRequirement/1482441/Predecessors?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:56:55.874 GET HierarchicalRequirement?fetch=ObjectID&query=(FormattedID = "S82")&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-31 22:57:01.228 200 HierarchicalRequirement?fetch=ObjectID&query=(FormattedID%20%3D%20%22S82%22)&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:57:01.228 POST hierarchicalrequirement/1482441?key=dc3b7d4a-85ed-4015-b50a-e20dc5080321&workspace=workspace/699220&project=project/719307
+                            {'HierarchicalRequirement': {'FormattedID': u'S82', 'Predecessors': [{'_ref': 'hierarchicalrequirement/6241864'}, {'_ref': 'hierarchicalrequirement/1482393'}], 'Name': 'Last Chance', 'ObjectID': 1482441}}
+2016-05-31 22:57:06.759 GET HierarchicalRequirement/1482441?workspace=workspace/699220&project=project/719307
+2016-05-31 22:57:12.049 200 HierarchicalRequirement/1482441?workspace=workspace/699220&project=project/719307
+2016-05-31 22:57:12.049 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S80)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-31 22:57:17.358 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S80)&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:57:17.358 GET HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID = S84)&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-31 22:57:22.727 200 HierarchicalRequirement?fetch=_ref,ObjectID,FormattedID,Name,Predecessors&query=(FormattedID%20%3D%20S84)&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:57:22.727 GET https://demo-apac.rallydev.com/slm/webservice/v2.0/HierarchicalRequirement/1482393/Predecessors?pagesize=200&start=1&workspace=workspace/699220&project=project/719307
+2016-05-31 22:57:28.156 200 HierarchicalRequirement/1482393/Predecessors?pagesize=200&start=1&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:57:28.187 GET HierarchicalRequirement?fetch=ObjectID&query=(FormattedID = "S80")&workspace=workspace/699220&project=project/719307&pagesize=100&start=1
+2016-05-31 22:57:34.298 200 HierarchicalRequirement?fetch=ObjectID&query=(FormattedID%20%3D%20%22S80%22)&workspace=workspace/699220&project=project TotalResultCount 1
+2016-05-31 22:57:34.298 POST hierarchicalrequirement/1482393?key=dc3b7d4a-85ed-4015-b50a-e20dc5080321&workspace=workspace/699220&project=project/719307
+                            {'HierarchicalRequirement': {'FormattedID': u'S80', 'Predecessors': [{'_ref': 'hierarchicalrequirement/6241864'}, {'_ref': 'hierarchicalrequirement/1482487'}], 'Name': 'Last Chance', 'ObjectID': 1482393}}
+2016-05-31 22:57:39.756 GET HierarchicalRequirement/1482393?workspace=workspace/699220&project=project/719307
+2016-05-31 22:57:45.018 200 HierarchicalRequirement/1482393?workspace=workspace/699220&project=project/719307

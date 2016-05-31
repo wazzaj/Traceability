@@ -1,9 +1,7 @@
 import pyral
 import requests
-import urllib
 from pyral import Rally, RallyRESTAPIError, rallyWorkset
 import sys, os
-from json import JSONEncoder
 
 ####################################################################################################
 
@@ -26,7 +24,7 @@ def addDependenciesToRally(rally, pre, post):
 
     newList.append({"_ref" : str(predecessor.ref)})
 
-    info = dict(FormattedID=postStory.FormattedID, Name="Last Chance", Predecessors=newList)
+    info = dict(FormattedID=postStory.FormattedID, Predecessors=newList)
     print "Issuing POST request..."
 
     try:

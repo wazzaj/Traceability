@@ -1,0 +1,1 @@
+python import.py --server=rally1.rallydev.com --apikey=_L0uiVOx8TQKzspSWcQpO8AyPigHBNEmrrycNs4pLims --workspace="New Payments Platform" --project="New Payments Platform"
